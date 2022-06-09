@@ -1,0 +1,24 @@
+<h1>{{ titulo }}</h1>
+<!-- <p>for works!</p> -->
+
+<!-- <div *ngIf="lista.length > 0">
+    lista é maior que 0
+</div>
+
+<div *ngIf="lista.length == 0">
+    lista é  0
+</div> -->
+
+<div *ngIf="isLista">
+    <ul>
+        <li *ngFor="let item of buttons">
+            {{ item.label + item.link }}
+        </li>
+    </ul>
+</div>
+
+<div *ngIf="!isLista">
+    lista é  0
+</div>
+
+<button (click)="onMostrarLista()">Mostrar lista</button>

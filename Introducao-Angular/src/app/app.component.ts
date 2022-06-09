@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Introducao-Angular';
-}
+
+  radix='https://www.radixeng.com.br/images/logos/radix-logo-completo.png';
+  }

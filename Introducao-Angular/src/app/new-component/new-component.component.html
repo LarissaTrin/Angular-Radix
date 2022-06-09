@@ -1,0 +1,29 @@
+<hr>
+<h1>{{title}}</h1>
+<!-- <p>new-component works!</p>
+
+<ul>
+    <li *ngFor="let item of lista" >
+        {{ item }}
+    </li>
+</ul> -->
+
+<h3>*ngIf</h3>
+<div *ngIf="lista.length > 0">
+    Lista maior que 0
+</div>
+<!-- não existe else -->
+<div *ngIf="lista.length == 0">
+    Lista igual a 0
+</div>
+
+<div *ngIf="isLista">
+    isLista é true
+</div>
+<!-- não existe else -->
+<div *ngIf="!isLista">
+    false
+</div>
+
+<button (click)="onMostrarLista()">Monstrar Lista</button>
+
